@@ -14,6 +14,12 @@
                 font-family: 'Inter', sans-serif;
                 line-height: 1.5;
             }
+            h1 {
+                margin-bottom: 0;
+            }
+            h2 {
+                margin-top: 1em;
+            }
             a {
                 text-decoration: none;
             }
@@ -22,25 +28,61 @@
                 margin: 0 auto;
                 padding: 10px;
             }
+            .join_button {
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .join_button:focus, a:focus, a:hover {
+                background-color: yellow;
+                color: black;
+            }
+            .nostyle:focus, .nostyle:hover {
+                background-color: transparent;
+                color: none;
+            }
+            .logo {
+                float: right;
+            }
         </style>
     </head>
     <body>
         <main class="h-card">
-            <a href="https://swicg.io" class="u-url u-uid"><img src="/swicg.png" alt="W3C SWICG logo" class="logo"></a>
+            <a href="https://swicg.io" class="u-url u-uid logo nostyle"><img src="https://swicg.io/swicg.png" alt="W3C SWICG logo" class="logo"></a>
 
             <h1 class="p-name">W3C SWICG</h1>
 
-            <p class="p-note">The Social Web Incubator Community Group (also known as SocialCG, or SWICG) is the successor of the Social Web Working Group, which ran from 2014 to 2017.</p>
+            <h2>About SWICG</h2>
+
+            <p class="p-note">The <a href="https://www.w3.org/community/socialcg/">Social Web Incubator Community Group</a> (also known as SocialCG, or SWICG) is the successor of the Social Web Working Group, which ran from 2014 to 2017.</p>
             
             <p>The SocialCG provides space to collaborate and coordinate for implementers who are building on any of the specifications published by the Social Web WG, and related technologies. It is also a place to incubate new proposals which build on or complement the Social Web WG recommendations.</p>
-            
+
+            <h2>Join the Group</h2>
+
+            <p>Anyone who is interested in learning about and/or contributing to advancing the social web is welcome to join the group.</p>
+
+            <p>The link below takes you to the W3C SWICG home page. From there, go to the "Get Involved" section to join.</p>
+
+            <a href="https://www.w3.org/community/socialcg/" class="join_button">Join the Group</a>
+
+            <h2>How We Communicate</h2>
+
+            <p>SWICG hosts regular meetings for community members, as well as topic meetings focused on a particular area of interest to the group.</p>
+
+            <p>Between meetings, we communicate through the <a href="https://lists.w3.org/Archives/Public/public-swicg">SWICG mailing list</a>, the #swicg IRC channel on <a href="https://irc.w3.org">irc.w3.org</a>, and Issues on GitHub repositories the group maintains.</p>
+
             <h2>Community Links</h2>
+
             <ul>
-                <li><a href="https://events.swicg.io" class="u-uid">SWICG Events Calendar</a></li>
-                <li><a href="https://www.w3.org/community/socialcg/" class="u-uid">SWICG W3C Homepage</a></li>
-                <li><a href="https://www.w3.org/groups/wg/social/publications/" class="u-uid">W3C Social Web WG Specifications</a></li>
-                <li><a href="https://github.com/swicg" class="u-uid">SWICG GitHub</a></li>
-                <li><a href="https://www.w3.org/wiki/SocialCG" class="u-uid">Community Wiki (access by request only; not actively used by the group)</a></li>
+                <li><a href="https://events.swicg.io" class="u-url">SWICG Events Calendar</a></li>
+                <li><a href="https://www.w3.org/community/socialcg/" class="u-url">SWICG W3C Homepage</a></li>
+                <li><a href="https://www.w3.org/groups/wg/social/publications/" class="u-url">W3C Social Web WG Specifications</a></li>
+                <li><a href="https://github.com/swicg" class="u-url">SWICG GitHub</a></li>
+                <li><a href="https://www.w3.org/wiki/SocialCG" class="u-url">Community Wiki (access by request only; not actively used by the group)</a></li>
             </ul>
         </main>
     </body>
